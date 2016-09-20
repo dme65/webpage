@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64546527-1', 'auto');
+    ga('send', 'pageview');
+
+
+  /*Event*/
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-64546527-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <title>David Eriksson</title>
+  <link rel="stylesheet" type="text/css" href="david.css" />
+
+  <div class="tabsy">
+    <center>
+      <nav>
+        <ul>
+        	<li style="border-left-width: 8px">
+            <a onclick="_gaq.push(['_trackEvent', 'Home', 'Click', 'NavBar']);"  href="index.html">Home
+            </a>
+          </li>
+          <li>
+            <a onclick="_gaq.push(['_trackEvent', 'CV', 'View', 'NavBar']);" href="cv.pdf">CV
+            </a>
+          </li>
+          <li>
+            <a onclick="_gaq.push(['_trackEvent', 'Research', 'Click', 'NavBar']);" href="research.html">Research
+            </a>
+          </li>
+          <li>
+            <a onclick="_gaq.push(['_trackEvent', 'Research', 'Click', 'NavBar']);" href="software.html">Software
+            </a>
+          </li>
+          <li>
+            <a onclick="_gaq.push(['_trackEvent', 'Teaching', 'Click', 'NavBar']);" href="teaching.html">Teaching
+            </a>
+          </li>
+          <li>
+            <a onclick="_gaq.push(['_trackEvent', 'Publications', 'Click', 'NavBar']);" href="publications.html">Publications
+            </a>
+          </li>
+          <li>
+            <a onclick="_gaq.push(['_trackEvent', 'Talks', 'Click', 'NavBar']);" href="talks.html">Talks
+            </a>
+          </li>
+          <li style="border-right-width: 8px">
+            <a onclick="_gaq.push(['_trackEvent', 'Coursework', 'Click', 'NavBar']);" href="coursework.html">Coursework
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </center>
+  </div>
+</head>
+
+
+<body><div class="researchBody">
+
+  <p class="sectionCourse">Current ongoing research at Cornell University</p>
+  <li>
+    <div class="bulk">
+      I work with
+      <a style="color: #CD5C5C; text-decoration: none" href="http://www.cs.cornell.edu/~bindel/" target="_blank">Professor David Bindel
+      </a>
+      and
+      <a style="color: #CD5C5C; text-decoration: none" href="http://www.cee.cornell.edu/people/profile.cfm?netid=cas12" target="_blank">Professor Christine Shoemaker
+      </a>
+      on surrogate optimization.
+      We are working on optimization of expensive black-box functions in high-dimensions when the number of evaluations are limited. The underlying objective function is approximated by a surrogate surface (interpolating surface) and we use the surrogate surface to decide where to evaluate next.
+      The surrogate surface can for example be a weighted sum of radial basis functions with an appropriately chosen tail function. Me and Professor David Bindel have implemented pySOT (<a href="https://github.com/dme65/pySOT">https://github.com/dme65/pySOT</a>), which is an asynchronous parallel surrogate optimization toolbox written in Python. I've also implemented SOT, which is a C++11 library for surrogate optimization (<a href="https://github.com/dme65/SOT">https://github.com/dme65/SOT</a>).
+    </div>
+  </li>
+
+  </br>
+
+  <li>
+    <div class="bulk">
+      I work with
+      <a style="color: #CD5C5C; text-decoration: none" href="http://www.cs.cornell.edu/~bindel/" target="_blank">Professor David Bindel
+      </a>
+      on global optimization algorithms with provable convergence rates. We're mainly interested in designing efficient optimization algorithms given information about the semi-norm of the objective function in the native space of a given radial basis function.
+    </div>
+  </li>
+
+  </br>
+
+  <li>
+    <div class="bulk">
+      I work with
+      <a style="color: #CD5C5C; text-decoration: none" href="http://www.cs.cornell.edu/cv/" target="_blank">Professor Charles Van Loan
+      </a>
+      on structured matrix problems. We're mainly interested in problems with Kronecker product structure where it's possible to design fast algorithms that make use of the given structure.
+    </div>
+  </li>
+
+  <p class="sectionCourse">Research done at Fraunhofer-Chalmers Centre in Gothenburg, Sweden
+  </p>
+  <div class="bulk">
+    <p>The Fraunhofer-Chalmers Centre in Gothenburg is a research center that cooperates closely with the mathematics department at Chalmers University.
+    </p>
+
+   <b>
+     March 2014-June 2014
+   </b>
+   <br/>
+   I worked full-time on visualization of large point clouds and I designed a visualization software that is capable of rendering 50+ FPS for point clouds having billions of points. My method uses less than 50 MB of RAM and reads points directly from the hard disk drive to the GPU when needed. Similar frame rates were seen when storing the point cloud data on a USB drive connected to a USB 2.0 port. All tests were carried out on a pretty mediocre graphics card with no more than 1 GB of memory. The software runs on only one thread with a low CPU load making it suitable to run in the background visualizing the results from a simulation.
+
+  <p>
+    A newly designed search algorithm makes it possible to do only a few million draws per frame (at the resolution 1920x1080) and very few reads from the hard drive are necessary for each frame. This makes this new method significantly better than many existing visualization softwares where points are read from the hard disk drive first when the user stops moving the camera in order to keep a high FPS. My method will always render a perfect frame no matter how fast the camera is moving since it knows exactly what points are visible at each frame.
+  </p>
+
+  <center>
+    <video id="PointCloudVisualization" src="pointCloud.mp4" height="380" width="640" controls>
+    </video>
+  </center>
+
+   <br/><br/>
+
+   <b>
+     September 2012-February 2014
+   </b>
+   <br/>
+   I worked part-time from September 2012-October 2013 and full-time thereafter as an applied researcher.  I worked on a project in computational geometry with the purpose of performing path-planning through massive point clouds; this project was also the focus of my master's thesis (October 2013 - March 2014). My task was to develop algorithms to efficiently compute the shortest distance between the point cloud and a triangulated object moved through the point cloud. The point clouds we worked with were so large (up to 10 billion points corresponding to 120 GB of data in floating point precision) that they would not fit in the RAM on most machines, requiring the use of well-designed out-of-core algorithms and carefully chosen data structures.
+
+  <p>
+    I derived a set of inequalities based on the convex hulls of subsets of the point cloud that can be used to neglect subsets of the point cloud that cannot contain the point closest to the triangulated object. The inequalities makes it possible to quickly exclude 99% of the subsets from which the shortest distance can be computed in a very fast manner with the use of PQP (Proximity Query Package). We achieved real-time distance computations ( >15 FPS) for a point cloud with 3 billion points with the RAM constrained to 16 GB.
+  </p>
+
+  <p>
+    This work yielded a submitted and accepted conference paper (<i>Approximate distance queries for path-planning in massive point clouds</i> in the 2014 11th International Conference on Informatics in Control, Automation and Robotics (ICINCO)) and a recently submitted journal paper.
+  </p>
+
+  </div>
+
+  <p class="sectionCourse">Research done at NVI, Inc., NASA Goddard Space Flight Center in Greenbelt, MD
+  </p>
+
+  <div class="bulk">
+  <b>
+    June 2013-September 2013
+  </b>
+  <br/>
+    I worked during this period as a full-time intern. I worked on modeling the excess delay of radio signals through the troposphere. Most methods to compute the signal path delay compute an a priori delay derived from surface pressure data and estimate a residual tropospheric delay as a nuisance parameter, making several simplifying assumptions in the process. In the past decade many researchers have tried to compute the signal path delay directly from numerical weather models, but using their results did not improve VLBI estimates.
+
+  <p>
+    My ray tracing approach was the first ever to give a substantial reduction in baseline length scatter and to improve station position estimates. The runs were based on about a million VLBI measurements spread over 10 years. I gave an internal presentation at NASA's Goddard Space Flight Center attended by about 40 scientists.
+  </p>
+
+  <p>
+    This work yielded a journal paper titled <i>Tropospheric delay raytracing applied in VLBI analysis</i>, published in the Journal of Geophysical Research in December 2014 .
+  </p>
+  <br/>
+
+  <b>
+    June 2011-June 2012
+  </b>
+  <br/>
+    I worked full-time during this period as an intern for NVI Inc., a contractor working with Very-long-baseline interferometry (VLBI).</p>
+
+  <p>
+    I worked on Earth surface deformations due to variations in water mass (hydrology). Loading is a very important effect, since the sum of the loading from pressure, hydrology and non-tidal oceans can reach several centimeters. Hydrology loading and non-tidal ocean loading had never been applied in VLBI analysis and I was the first to model and test these effects and, with the help of my supervisor, analyze the results. Applying these loading effects showed a clear improvement in our analysis. I also worked on other types of loading, such as pressure loading, ice loading, and topographical errors in pressure loading methods. I gave an internal presentation at NASA GSFC about my results for hydrology loading.
+  </p>
+
+  </div>
+
+  </div>
+</body>
+</html>
