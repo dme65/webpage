@@ -1,0 +1,114 @@
+/* Spacers*/
+
+.spacer5 { height: 5px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer10 { height: 10px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer15 { height: 15px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer20 { height: 20px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer25 { height: 25px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer30 { height: 30px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer35 { height: 35px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer40 { height: 40px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer45 { height: 45px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer50 { height: 50px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer100 { height: 100px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer200 { height: 200px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+
+
+.bottom-right{
+  right:0;
+  bottom:0;
+  position:absolute;
+}
+
+.theme-showcase >p >.btn{
+	margin: 5px 0;
+}
+
+.theme-showcase .navbar .container{
+	width:auto;
+}
+
+.bot-shrink20{
+	margin-bottom:-20px;
+}
+
+.bot-shrink10{
+	margin-bottom:-10px;
+}
+
+.top-shrink10{
+	margin-top:-10px;
+}
+
+.top-shrink20{
+  margin-top:-20px;
+}
+
+.top-expand10{
+  margin-top:10px;
+}
+
+.top-expand20{
+  margin-top:20px;
+}
+
+.my-well{
+	background-color:#F5F3EE;
+}
+
+.left-shift{
+	margin-left: -10px;
+}
+
+.my-block {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+
+.light-green {
+  background: #A5EDD6;
+  -webkit-background:#A5EDD6;
+}
+
+.light-orange {
+  background: #FCCFAB;
+}
+
+.light-blue {
+  background: #96EAFF;
+}
+
+.light-red{
+  background: #FBDFDF;
+}
+
+.light-yellow{
+  background: #FFEFA3;
+}
+
+.light-platinum{
+  background: #ACA8BB;
+}
+
+.auto-spacing{
+  line-height: 169%;
+}
+
+.navbar-collapse {
+    color: #CC3333;
+    background-color: #CC3333;
+}
+
+.navbar-fixed-top {
+    color: #CC3333;
+    background-color: #CC3333;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #CC3333; /* old IE */
+    background-color: #CC3333; /* Modern Browsers */
+}

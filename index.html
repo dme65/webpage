@@ -1,124 +1,215 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta http-equiv="Expires" content="-1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <title>Home</title>
 
-    ga('create', 'UA-64546527-1', 'auto');
-    ga('send', 'pageview');
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-  /*Event*/
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-64546527-1']);
-    _gaq.push(['_trackPageview']);
+  <!-- Custom CSS -->
+  <link href="css/dme65.css" rel="stylesheet">
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-  <title>David Eriksson</title>
-  <link rel="stylesheet" type="text/css" href="david.css" />
+  <!-- Icons -->
+  <link href="css/academicons.css" rel="stylesheet" >
+  <link href="css/font-awesome.css" rel="stylesheet" >
 </head>
 
 <body>
-  <div class="tabsy">
-    <center>
-      <nav>
-        <ul>
-        	<li style="border-left-width: 8px">
-            <a onclick="_gaq.push(['_trackEvent', 'Home', 'Click', 'NavBar']);"  href="index.html">Home
-            </a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">David Eriksson</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class ="nav navbar-nav navbar-right">
+          <li>
+            <a href="data/cv.pdf" target="_blank">CV</a>
           </li>
           <li>
-            <a onclick="_gaq.push(['_trackEvent', 'CV', 'View', 'NavBar']);" href="cv.pdf">CV
-            </a>
+            <a href="research.html">Research</a>
           </li>
           <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Research', 'Click', 'NavBar']);" href="research.html">Research
-            </a>
+            <a href="teaching.html">Teaching</a>
           </li>
           <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Research', 'Click', 'NavBar']);" href="software.html">Software
-            </a>
+            <a href="publications.html">Publications</a>
           </li>
           <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Teaching', 'Click', 'NavBar']);" href="teaching.html">Teaching
-            </a>
+            <a href="presentations.html">Presentations</a>
           </li>
           <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Publications', 'Click', 'NavBar']);" href="publications.html">Publications
-            </a>
+            <a href="software.html">Software</a>
           </li>
           <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Talks', 'Click', 'NavBar']);" href="talks.html">Talks
-            </a>
+            <a href="coursework.html">Coursework</a>
           </li>
-          <li style="border-right-width: 8px">
-            <a onclick="_gaq.push(['_trackEvent', 'Coursework', 'Click', 'NavBar']);" href="coursework.html">Coursework
-            </a>
+          <li>
+            <a href="aboutme.html">About me</a>
           </li>
         </ul>
-      </nav>
-    </center>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+  <div class="container theme-showcase" role = "main">
+    <div class="jumbotron">
+      <div class="row">
+
+        <!-- Image of me -->
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <br>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+            <img src='pics/David.jpg' class="img-responsive">
+          </div>
+        </div>
+
+        <!-- Text about me -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <z1>David Eriksson</z1>
+          <h3>PhD Student in Applied Mathematics</h3>
+          <p>
+            <a href="http://cam.cornell.edu/"
+            target="_blank">Center for Applied Mathematics</a><br/>
+            657 Frank H.T. Rhodes Hall<br/>
+            Cornell University<br/>
+            Ithaca, NY 14853<br/>
+            OH: TBA
+          </p>
+          <div class="pull-left">
+            <p>
+              <span class="glyphicon glyphicon-envelope"></span>
+              <a href="mailto:dme65@cornell.edu">
+                dme65@cornell.edu
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Cornell image-->
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+            <img src='pics/cornell-logo.gif' class="img-responsive">
+          </div>
+
+          <center>
+            <div class="pull-left">
+              <br>
+
+              <ul class="list-inline">
+                <li>
+                  <a href="https://github.com/dme65" class="list-group-item" title="GitHub"><i class="fa fa-github fa-3x"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/davideriksson89" class="list-group-item" title="LinkedIn"> <i class="fa fa-linkedin fa-3x"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list-inline">
+                <li>
+                  <a href="https://scholar.google.com/citations?user=SWQjkN4AAAAJ&hl=en" class="list-group-item" title="GoogleScholar"> <i class="ai ai-google-scholar ai-3x"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                  href="http://www.researchgate.net/profile/David_Eriksson5"
+                  class="list-group-item" title="ResearchGate">
+                  <i class="ai ai-researchgate ai-3x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </center>
+      </div>
+    </div>
   </div>
 
-  <div class="heading">
-    <img src="./pics/David.jpg" alt="David Eriksson" height="246" width="200" align="left" hspace="15" vspace="5"><br style="line-height:0px;" />
-    <img src="./pics/CAM.gif" height="50" width="215" align="right" vspace="0"><h3>David Eriksson </h3>
-
-    <br/> PhD Student <br/>
-    Center for Applied Mathematics <br/>
-    Cornell University<br/>
-    657 Frank H.T. Rhodes Hall <br/>
-    Ithaca, NY 14850<br/>
-    <font face="courier">
-      <a onclick="_gaq.push(['_trackEvent', 'Email', 'Click', 'mainpage']);" style="color: black" href="mailto:dme65@cornell.edu">dme65@cornell.edu
-      </a>
-    </font>
-    <br/> <br/> Currently teaching: CS 6210
-    <br/>Office hours: F 1:00-3:00 in 657 Rhodes Hall, Room 1
-
-  </div>
-  <br/>
-  <p class="section"></p>
-  <p class="content">
-    I am a third-year Ph.D. student in the Center for Applied Mathematics at Cornell University. I'm advised by <a style="color: #CD5C5C; text-decoration: none" href="http://www.cs.cornell.edu/~bindel/" target="_blank">Professor David Bindel</a>. I'm interested in Surrogate Optimization, Scientific Computing, Numerical Linear Algebra, High-Performance Computing, Machine Learning, and Computational Geometry. I have a Bachelor of Science in Mathematics and a Master of Science in Engineering Mathematics and Computational Science from <a style="color: #CD5C5C; text-decoration: none" href="http://www.chalmers.se/en/Pages/default.aspx" target="_blank">Chalmers University of Technology</a>, located in Gothenburg, Sweden.
+  <h2 id="About"></h2>
+  <p class="lead">
+    I am a third-year Ph.D. student in the Center for Applied Mathematics
+    at Cornell University. I'm advised by <a
+    href="http://www.cs.cornell.edu/~bindel/" target="_blank">Professor
+    David Bindel</a>. I'm interested in Surrogate Optimization, Scientific
+    Computing, Numerical Linear Algebra, High-Performance Computing,
+    Machine Learning, and Computational Geometry. I have a Bachelor of
+    Science in Mathematics and a Master of Science in Engineering
+    Mathematics and Computational Science from Chalmers University of
+    Technology, located in Gothenburg, Sweden.
   </p>
 
-  <p id="O" class="section">Other Links</p>
+  <hr>
 
-  <p class="content2">
-    <center>
-      <a onclick="_gaq.push(['_trackEvent', 'LinkdIn', 'Go to', 'Main icons']);" href="https://www.linkedin.com/in/davideriksson89" target="_blank" title="LinkedIn Profile">
-        <img style="border: 0;" src="./pics/linkdin.jpg" alt="linkedin" height="70" width="70" hspace="15" vspace="15" /></a>
-      <a onclick="_gaq.push(['_trackEvent', 'GitHub', 'Go to', 'Main icons']);" href="https://github.com/dme65/" target="_blank">
-        <img style="border: 0;" src="./pics/github.png" alt="GitHub" height="70" width="70" hspace="15" vspace="15" title="GitHub Repository" /></a>
-      <a onclick="_gaq.push(['_trackEvent', 'GoogleScholar', 'Go to', 'Main icons']);" href="https://scholar.google.com/citations?user=SWQjkN4AAAAJ&hl=en" target="_blank" title="Google Scholar">
-        <img style="border: 0;" src="./pics/googlescholar.png" alt="Google Scholar" height="70" width="175" hspace="15" vspace="10" /></a>
-      <a onclick="_gaq.push(['_trackEvent', 'Researchgate', 'Go to', 'Main icons']);" href="http://www.researchgate.net/profile/David_Eriksson5" target="_blank" title="Research Gate">
-        <img style="border: 0;" src="./pics/ResearchGate.png" alt="Research Gate" height="20" width="156" hspace="15" vspace="40" /></a>
-      <a onclick="_gaq.push(['_trackEvent', 'NasaHydrology', 'Go to', 'Main icons']);" href="http://lacerta.gsfc.nasa.gov/hydlo/" target="_blank" title="Hydrology Loading Service">
-        <img src="./pics/hydrology.png" alt="Hydrology Loading" height="90" width="90" hspace="15" vspace="5" /></a>
-      <a onclick="_gaq.push(['_trackEvent', 'NasaNontidalOceanLoading', 'Go to', 'Main icons']);" href="http://lacerta.gsfc.nasa.gov/oclo/" title="Non-Tidal Ocean Loading Service" target="_blank"><img style="border: 0;" src="./pics/oceanloading.png" alt="ocean loading" height="90" width="90" hspace="15" vspace="5" /></a>
-      <a onclick="_gaq.push(['_trackEvent', 'NasaTroposphere', 'Go to', 'Main icons']);" href="http://lacerta.gsfc.nasa.gov/tropodelays/" target="_blank" title="Tropospheric Ray Traced Delays service">
-        <img style="border: 0; text-decoration:none" src="./pics/troposphere.png" alt="ocean loading" height="90" width="90" hspace="15" vspace="5" /></a>
+
+  <div class="row">
+    <div class="col-xs-12 cols-sm-12 col-md-6 col-lg-6">
+      <h2>News</h2>
+      <p>
+        <strong>2016-12-28:</strong> Welcome to my new website!
+      </p>
+
       <!--
-      <a onclick="_gaq.push(['_trackEvent', 'BitBucket', 'Go to', 'Main icons']);" href="https://bitbucket.org/dme65/" target="_blank">
-        <img style="border: 0;" src="./pics/bitbucket.png" alt="Bitbucket" height="70" width="70" hspace="15" vspace="15" title="Bitbucket">
-      </a>
-      -->
-    </center>
-  </p>
+      <h2>Research highlights</h2>
+      <p>
+      Something
+    </p>
+  -->
+</div>
+
+<div class="col-xs-12 cols-sm-12 col-md-6 col-lg-6">
+  <!--
+  <h2>Current teaching</h2>
+  <p>
+  <a href="class/cs6210-f16/">Matrix Computations</a>
+  (CS 6210)</br>
+  Role: Teaching assistant</br>
+  OH: TBA
+</p>
+-->
+<h2>Upcoming travels</h2>
+<p class="handingindent">
+  <strong>2017-02-27:</strong>
+  <a href="https://www.siam.org/meetings/cse17/">SIAM Computational Science and Engineering (CSE17)</a>
+</p>
+</div>
+</div>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="pull-left">
+    <b>David Eriksson</b> <a href="mailto:dme65@cornell.edu" target="_blank">(dme65@cornell.edu)</a>
   </div>
+  <div class="pull-right">
+    <b>Last Update:</b>
+    <script language="JavaScript">
+    document.write(document.lastModified);
+    </script>
+  </div>
+</footer>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

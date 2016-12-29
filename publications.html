@@ -1,150 +1,291 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta http-equiv="Expires" content="-1">
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-64546527-1', 'auto');
-    ga('send', 'pageview');
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <title>Publications</title>
 
-  /*Event*/
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-64546527-1']);
-    _gaq.push(['_trackPageview']);
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+  <!-- Custom CSS -->
+  <link href="css/dme65.css" rel="stylesheet">
 
-  <title>David Eriksson</title>
-  <link rel="stylesheet" type="text/css" href="david.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-  <div class="tabsy">
-    <center>
-      <nav>
-        <ul>
-        	<li style="border-left-width: 8px">
-            <a onclick="_gaq.push(['_trackEvent', 'Home', 'Click', 'NavBar']);"  href="index.html">Home
-            </a>
-          </li>
-          <li>
-            <a onclick="_gaq.push(['_trackEvent', 'CV', 'View', 'NavBar']);" href="cv.pdf">CV
-            </a>
-          </li>
-          <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Research', 'Click', 'NavBar']);" href="research.html">Research
-            </a>
-          </li>
-          <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Research', 'Click', 'NavBar']);" href="software.html">Software
-            </a>
-          </li>
-          <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Teaching', 'Click', 'NavBar']);" href="teaching.html">Teaching
-            </a>
-          </li>
-          <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Publications', 'Click', 'NavBar']);" href="publications.html">Publications
-            </a>
-          </li>
-          <li>
-            <a onclick="_gaq.push(['_trackEvent', 'Talks', 'Click', 'NavBar']);" href="talks.html">Talks
-            </a>
-          </li>
-          <li style="border-right-width: 8px">
-            <a onclick="_gaq.push(['_trackEvent', 'Coursework', 'Click', 'NavBar']);" href="coursework.html">Coursework
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </center>
-  </div>
 </head>
 
-
 <body>
-  <div class="pubBody">
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">David Eriksson</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class ="nav navbar-nav navbar-right">
+          <li>
+            <a href="data/cv.pdf" target="_blank">CV</a>
+          </li>
+          <li>
+            <a href="research.html">Research</a>
+          </li>
+          <li>
+            <a href="teaching.html">Teaching</a>
+          </li>
+          <li>
+            <a href="publications.html">Publications</a>
+          </li>
+          <li>
+            <a href="presentations.html">Presentations</a>
+          </li>
+          <li>
+            <a href="software.html">Software</a>
+          </li>
+          <li>
+            <a href="coursework.html">Coursework</a>
+          </li>
+          <li>
+            <a href="aboutme.html">About me</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
 
-  <p class="section">Journal Publications</p>
-  <p class="pubContent">
-    David Eriksson and Evan Shellshear.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Fast exact shortest distance queries for massive point clouds', 'View', 'Publication']);"  href="http://www.sciencedirect.com/science/article/pii/S1524070316000266" target="_blank">Fast exact shortest distance queries for massive point clouds
-      </a>
-    </b>.
-    In <i>Graphical Models</i>.
-  </p>
+  <div class="container theme-showcase" role = "main">
+    <div class="row">
 
-  <p class="pubContent">
-    David Eriksson, Daniel S. MacMillan, and John M. Gipson.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Tropospheric delay raytracing applied in VLBI analysis Publication', 'View', 'Publication']);"  href="http://onlinelibrary.wiley.com/doi/10.1002/2014JB011552/full" target="_blank">Tropospheric delay raytracing applied in VLBI analysis
-      </a>
-    </b>.
-    In <i>Journal of Geophysical Research</i>. Vol. 119, Issue 12, pg. 9156-9170. December 2014.
-  </p>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
 
-  <p class="pubContent">
-    David Eriksson and Daniel S. MacMillan.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Continental hydrology loading observed by VLBI measurements', 'View', 'Publication']);" href="http://link.springer.com/article/10.1007/s00190-014-0713-0" target="_blank">Continental hydrology loading observed by VLBI measurements
-      </a>
-    </b>.
-    In <i>Journal of Geodesy</i>, Springer Berlin Heidelberg. Vol. 88, Issue 7, pg. 675-690. 1 July 2014.
-  </p>
+        <!-- Journal publications -->
+        <div class="row bot-shrink20">
+          <div class="col-sm-10">
+            <h1>Publications</h1>
+          </div>
+          <div class = "col-sm-2">
+            <div class="spacer5"></div>
+          </div>
+        </div>
 
-  <p class="section">Conference Proceedings</p>
+        <hr>
 
-  <p class="pubContent">David Eriksson and Evan Shellshear.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Approximate distance queries for path-planning in massive point clouds', 'View', 'Conference']);" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7049580&tag=1" target="_blank">Approximate distance queries for path-planning in massive point clouds.
-      </a>
-    </b>
-    In <i>2014 11th International Conference on Informatics in Control, Automation and Robotics (ICINCO)</i>, IEEE. Vol. 2, pg. 20-28. 1 September 2014.
-  </p>
+        <div class="well my-well">
+          <div class="media-body">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="media">
+                Something
+              </div>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <p>
+                D. Eriksson and E. Shellshear, “Fast exact shortest distance queries for massive point clouds,” <i>Graphical Models</i>, vol. 84, pp. 28-37, 2016.<br>
+                <a href="http://www.sciencedirect.com/science/article/pii/S1524070316000266" target="_blank">Download</a>
+                &nbsp;&nbsp;&nbsp;
+                <a data-toggle="collapse" href="#2016-fast-shortest-distance">Abstract</a>
+              </p>
+              <div id="2016-fast-shortest-distance" class="collapse">
+                <h4>Abstract:</h4>
+                <p>
+                  This paper describes a new efficient algorithm for the rapid
+                  computation of exact shortest distances between a point cloud
+                  and another object (e.g. triangulated, point-based, etc.) in
+                  three dimensions. It extends the work presented in Eriksson
+                  and Shellshear (2014) where only approximate distances were
+                  computed on a simplification of a massive point cloud. Here,
+                  the fast computation of the exact shortest distance is
+                  achieved by pruning large subsets of the point cloud known
+                  not to be closest to the other object. The approach works for
+                  massive point clouds even with a small amount of RAM and is
+                  able to provide real time performance. Given a standard PC
+                  with only 8GB of RAM, this resulted in real-time shortest
+                  distance computations of 15 frames per second for a point
+                  cloud having 1 billion points in three dimensions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <p class="pubContent">David Eriksson and Daniel S. MacMillan.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Nontidal ocean loading observed by VLBI measurements', 'View', 'Conference']);" href="http://evga.fgi.fi/sites/default/files/u3/MacMillan.pdf" target="_blank">Nontidal ocean loading observed by VLBI measurements
-      </a>
-    </b>.
-    In <i>21st Meeting of the European VLBI Group for Geodesy and Astronomy</i>, N. Zubko and M. Poutanen, Reports of the Finnish Geodetic Institute. Vol. 1, pg. 135-140. August 2013.
-  </p>
+        <div class="well my-well">
+          <div class="media-body">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="media">
+                Something
+              </div>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <p class="pubContent">
+                D. Eriksson, D. S. MacMillan, and J. M. Gipson, “Tropospheric delay raytracing applied in VLBI analysis,” <i>Journal of Geophysical Research</i>, vol. 119, issue 12, pp. 9156-9170, 2014.<br>
+                <a href="http://onlinelibrary.wiley.com/doi/10.1002/2014JB011552/full" target="_blank">Download</a>
+                &nbsp;&nbsp;&nbsp;
+                <a data-toggle="collapse" href="#2014-tropo-delays">Abstract</a>
+              </p>
+              <div id="2014-tropo-delays" class="collapse">
+                <h4>Abstract:</h4>
+                <p>
+                  Tropospheric delay modeling error continues to be one of the
+                  largest sources of error in VLBI (very long baseline
+                  interferometry) analysis. For standard operational solutions,
+                  we use the VMF1 elevation-dependent mapping functions derived
+                  from European Centre for Medium-Range Weather Forecasts data.
+                  These mapping functions assume that tropospheric delay at a
+                  site is azimuthally symmetric. As this assumption is not
+                  true, we have instead determined the ray trace delay along
+                  the signal path through the troposphere for each VLBI quasar
+                  observation. We determined the troposphere refractivity
+                  fields from the pressure, temperature, specific humidity, and
+                  geopotential height fields of the NASA Goddard Space Flight
+                  Center Goddard Earth Observing System version 5 numerical
+                  weather model. When applied in VLBI analysis, baseline length
+                  repeatabilities were improved compared with using the VMF1
+                  mapping function model for 72% of the baselines and site
+                  vertical repeatabilities were better for 11 of 13 sites
+                  during the 2 week CONT11 observing period in September 2011.
+                  When applied to a larger data set (2011–2013), we see a
+                  similar improvement in baseline length and also in site
+                  position repeatabilities for about two thirds of the stations
+                  in each of the site topocentric components.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <p class="pubContent">David Eriksson, Daniel S. MacMillan, and John M. Gipson.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Tropospheric delay raytracing applied in VLBI analysis Conference', 'View', 'Conference']);" href="http://adsabs.harvard.edu/abs/2013AGUFM.G43A0965M" target="_blank">Tropospheric delay raytracing applied in VLBI analysis
-      </a>
-    </b>.
-    In <i>American Geophysical Union (AGU) 2013 Fall Meeting Abstracts</i>. Vol. 1, pg 0965. San Francisco, CA. December 2013.
-  </p>
+        <div class="well my-well">
+          <div class="media-body">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="media">
+                Something
+              </div>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <p class="pubContent">
+                D. Eriksson and D. S. MacMillan, “Continental hydrology loading observed by VLBI measurements,” <i>Journal of Geodesy</i>, Springer, vol. 88, issue 7, pp. 675-690, 2014.<br>
+                <a href="http://link.springer.com/article/10.1007/s00190-014-0713-0" target="_blank">Download</a>
+                &nbsp;&nbsp;&nbsp;
+                <a data-toggle="collapse" href="#2014-hydro-loading">Abstract</a>
+              </p>
+              <div id="2014-hydro-loading" class="collapse">
+                <h4>Abstract:</h4>
+                <p>
+                  Variations in continental water storage lead to loading
+                  deformation of the crust with typical peak-to-peak variations
+                  at very long baseline interferometry (VLBI) sites of 3–15 mm
+                  in the vertical component and 1–2 mm in the horizontal
+                  component. The hydrology signal at VLBI sites has annual and
+                  semi-annual components and clear interannual variations. We
+                  have calculated the hydrology loading series using mass
+                  loading distributions derived from the global land data
+                  assimilation system (GLDAS) hydrology model and alternatively
+                  from a global grid of equal-area gravity recovery and climate
+                  experiment (GRACE) mascons. In the analysis of the two weekly
+                  VLBI 24-h R1 and R4 network sessions from 2003 to 2010 the
+                  baseline length repeatabilities are reduced in 79 % (80 %) of
+                  baselines when GLDAS (GRACE) loading corrections are applied.
+                  Site vertical coordinate repeatabilities are reduced in about
+                  80 % of the sites when either GLDAS or GRACE loading is used.
+                  In the horizontal components, reduction occurs in 70–80 % of
+                  the sites. Estimates of the annual site vertical amplitudes
+                  were reduced for 16 out of 18 sites if either loading series
+                  was applied. We estimated loading admittance factors for each
+                  site and found that the average admittances were 1.01 ±
+                  0.05 for GRACE and 1.39 ± 0.07 for GLDAS. The standard
+                  deviations of the GRACE admittances and GLDAS admittances
+                  were 0.31 and 0.68, respectively. For sites that have been
+                  observed in a set of sufficiently temporally dense daily
+                  sessions, the average correlation between VLBI vertical
+                  monthly averaged series and GLDAS or GRACE loading series was
+                  0.47 and 0.43, respectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <p class="pubContent">David Eriksson and Daniel S. MacMillan.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Explaining the VLBI estimated degree1 load variation via atmospheric', 'View', 'Conference']);" href="http://adsabs.harvard.edu/abs/2012AGUFM.G52B..06M" target="_blank">Explaining the VLBI estimated degree-1 load variation via atmospheric, oceanic, and hydrological mass variations
-      </a>
-    </b>.
-    In <i>American Geophysical Union (AGU) 2012 Fall Meeting Abstracts</i>. Vol. 1, p. 6. San Francisco, CA. December 2012.
-  </p>
+        <div class="well my-well">
+          <div class="media-body">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="media">
+                Something
+              </div>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <p class="pubContent">
+                D. Eriksson and E. Shellshear, “Approximate distance queries for path-planning in massive point clouds,” <i>2014 11th International Conference on Informatics in Control, Automation and Robotics (ICINCO)</i>, IEEE, vol. 2, pp. 20-28, 2014.<br>
+                <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7049580&tag=1" target="_blank">Download</a>
+                &nbsp;&nbsp;&nbsp;
+                <a data-toggle="collapse" href="#2014-approx-distance">Abstract</a>
+              </p>
+              <div id="2014-approx-distance" class="collapse">
+                <h4>Abstract:</h4>
+                <p>
+                  In this paper, algorithms have been developed that are
+                  capable of efficiently pre-processing massive point clouds
+                  for the rapid computation of the shortest distance between a
+                  point cloud and other objects (e.g. triangulated,
+                  point-based, etc.). This is achieved by exploiting fast
+                  distance computations between specially structured subsets of
+                  a simplified point cloud and the other object. This approach
+                  works for massive point clouds even with a small amount of
+                  RAM and was able to speed up the computations, on average, by
+                  almost two orders of magnitude. Given only 8 GB of RAM, this
+                  resulted in shortest distance computations of 30 frames per
+                  second for a point cloud originally having 1 billion points.
+                  The findings and implementations will have a direct impact
+                  for the many companies that want to perform path-planning
+                  applications through massive point clouds since the
+                  algorithms are able to produce real-time distance
+                  computations on a standard PC.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <p class="section">Miscellaneous</p>
-  <p class="pubContent">David Eriksson.
-    <b>
-      <a onclick="_gaq.push(['_trackEvent', 'Point cloud simplification and processing for pathplanning', 'View', 'Thesis']);" href="ThesisDavidEriksson.pdf" target="_blank">Point cloud simplification and processing for path-planning
-      </a>
-    </b>. Chalmers University, Master's thesis. March 2014.
-  </p>
-
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="pull-left">
+        <b>David Eriksson</b> <a href="mailto:dme65@cornell.edu" target="_blank">(dme65@cornell.edu)</a>
+      </div>
+      <div class="pull-right">
+        <b>Last Update:</b>
+        <script language="JavaScript">
+        document.write(document.lastModified);
+        </script>
+      </div>
+    </footer>
   </div>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
