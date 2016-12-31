@@ -61,10 +61,14 @@
 }
 
 .my-block {
-  float: left;
-  width: 20px;
+  width: 200px;
   height: 20px;
+  text-align: center;
 }
+
+.purple { background: purple; }
+.green { background: green; }
+.blue { background: blue; }
 
 .light-green {
   background: #A5EDD6;
