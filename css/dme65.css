@@ -43,6 +43,15 @@
     }
 }
 
+.navbar-brand
+{
+  font-size: 28px !important;
+}
+.nav
+{
+  font-size: 14px !important;
+}
+
 .bottom-right{
   right:0;
   bottom:0;
