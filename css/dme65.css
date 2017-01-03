@@ -104,9 +104,17 @@
   text-align: center;
 }
 
-.purple { background: purple; }
-.green { background: green; }
-.blue { background: blue; }
+.purple {
+  background: purple;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
 
 .light-green {
   background: #A5EDD6;
@@ -145,6 +153,10 @@
 .navbar-fixed-top {
     color: #CC3333;
     background-color: #CC3333;
+}
+
+.cornell-red {
+    background: #CC3333;
 }
 
 hr {
