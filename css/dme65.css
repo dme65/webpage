@@ -43,13 +43,24 @@
     }
 }
 
-.navbar-brand
-{
-  font-size: 28px !important;
+.nav.navbar-nav.navbar-right li a {
+  font-size: 16px !important;
+  color: black !important;
 }
-.nav
-{
-  font-size: 14px !important;
+
+.navbar-collapse {
+    color: #CC3333;
+    background-color: #CC3333;
+}
+
+.navbar-fixed-top {
+    color: #CC3333;
+    background-color: #CC3333;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #F5F3EE !important;
+  text-decoration: none !important;
 }
 
 .bottom-right{
@@ -145,22 +156,9 @@
   line-height: 169%;
 }
 
-.navbar-collapse {
-    color: #CC3333;
-    background-color: #CC3333;
-}
-
-.navbar-fixed-top {
-    color: #CC3333;
-    background-color: #CC3333;
-}
-
 .cornell-red {
+    color: #CC3333;
     background: #CC3333;
-}
-
-.img-responsive {
-    width:100%;
 }
 
 hr {
