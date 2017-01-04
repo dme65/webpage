@@ -45,13 +45,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">David Eriksson</a>
+        <a class="navbar-brand" href="https://people.cam.cornell.edu/~dme65/">David Eriksson</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar">
         <ul class ="nav navbar-nav navbar-right">
           <li>
-            <a href="index.html">Home</a>
+            <a href="https://people.cam.cornell.edu/~dme65/">Home</a>
           </li>
           <li>
             <a href="data/cv.pdf" target="_blank">CV</a>
@@ -96,9 +96,11 @@
 
         <div class="well my-well">
           <div class="media">
-            <div class="col-sm-5 col-md-4 col-lg-3">
-              <img class="media-object left-shift" src="pics/rosenbrock.jpg" width=170/>
-            </div>
+            <center>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <img class="media-object left-shift" src="pics/rosenbrock.jpg" width=170/>
+              </div>
+            </center>
 
             <div class="col-sm-7 col-md-8 col-lg-9">
               <h4 class="media-heading">
@@ -126,9 +128,11 @@
 
         <div class="well my-well">
           <div class="media">
-            <div class="col-sm-5 col-md-4 col-lg-3">
-              <img class="media-object left-shift" src="pics/rosenbrock.jpg" width=170/>
-            </div>
+            <center>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <img class="media-object left-shift" src="pics/rosenbrock.jpg" width=170/>
+              </div>
+            </center>
 
             <div class="col-sm-7 col-md-8 col-lg-9">
               <h4 class="media-heading">
@@ -148,9 +152,11 @@
 
         <div class="well my-well">
           <div class="media">
-            <div class="col-sm-5 col-md-4 col-lg-3">
-              <img class="media-object left-shift" src="pics/seminorm_bounds.png" width=170/>
-            </div>
+            <center>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <img class="media-object left-shift" src="pics/seminorm_bounds.png" width=170/>
+              </div>
+            </center>
 
             <div class="col-sm-7 col-md-8 col-lg-9">
               <h4 class="media-heading">
@@ -168,12 +174,14 @@
 
         <div class="well my-well">
           <div class="media">
-            <div class="col-sm-5 col-md-4 col-lg-3">
-              <div style="font-size: 85%;">
-                $$(A*B)\,x = d$$
-                $$A*B := (A_{ij} \otimes B_{ij})_{ij}$$
+            <center>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <div style="font-size: 85%;">
+                  $$(A*B)\,x = d$$
+                  $$A*B := (A_{ij} \otimes B_{ij})_{ij}$$
+                </div>
               </div>
-            </div>
+            </center>
 
             <div class="col-sm-7 col-md-8 col-lg-9">
               <h4 class="media-heading">
@@ -194,9 +202,11 @@
 
         <div class="well my-well">
           <div class="media">
-            <div class="col-sm-5 col-md-4 col-lg-3">
-              <img class="media-object left-shift" src="pics/gaussian-process.gif" width=150/>
-            </div>
+            <center>
+              <div class="col-sm-5 col-md-4 col-lg-3">
+                <img class="media-object left-shift" src="pics/gaussian-process.gif" width=150/>
+              </div>
+            </center>
 
             <div class="col-sm-7 col-md-8 col-lg-9">
               <h4 class="media-heading">
@@ -210,12 +220,11 @@
                 </a>
                 on scalable inference for Machine Learning. The log marginal
                 likelihood under a Gaussian process is given by
-                <div style="font-size: 85%;">
-                  $$\begin{equation}
-                  \label{eq:mloglik}
-                  \log p(y|X) = -\frac{1}{2}y^T\alpha -
-                  \frac{1}{2}\log |K + \sigma^2 I| - \frac{n}{2}\log 2\pi
-                  \end{equation}$$
+                <div style="font-size: 100%;">
+                  $$\begin{align}
+                  \log p(y|X) = &-\frac{1}{2}y^T\alpha \\
+                  &-\frac{1}{2}\log |K + \sigma^2 I| \\ &-\frac{n}{2}\log 2\pi
+                  \end{align}$$
                 </div>
                 where $K_{ij} = k(x_i, x_j)$ is the kernel matrix and
                 $\alpha = (K + \sigma^2 I)^{-1}y$. Optimizing over the log
