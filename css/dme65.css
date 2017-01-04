@@ -159,6 +159,10 @@
     background: #CC3333;
 }
 
+.img-responsive {
+    width:100%;
+}
+
 hr {
     border: none;
     height: 1px;
