@@ -165,6 +165,17 @@ body {
     padding-top: 70px;
 }
 
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 hr {
     border: none;
     height: 1px;
