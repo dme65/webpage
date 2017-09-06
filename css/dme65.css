@@ -183,3 +183,7 @@ hr {
     color: #CC3333; /* old IE */
     background-color: #CC3333; /* Modern Browsers */
 }
+
+.embed-responsive-100x400px{
+  padding-bottom: 400px;
+}
