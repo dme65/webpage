@@ -23,7 +23,21 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        },
+        messageStyle: "none",
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+    });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"
+    type="text/javascript"></script>
 </head>
 
 <body>
@@ -99,6 +113,54 @@
                             <div class="col-xs-5 col-sm-4 col-md-3 vcenter">
                                 <table>
                                     <center>
+                                        <tr><td class="my-block light-platinum">Machine learning</td></tr>
+                                        <tr><td class="my-block light-green">Numerical Analysis</td></tr>
+                                    </center>
+                                </table>
+                                <br>
+                            </div><!--
+                            --><div class="col-xs-7 col-sm-8 col-md-9 vcenter">
+                            <p class="pubContent">
+                                <b>Scalable Log Determinants for Gaussian Process Kernel Learning</b>
+                                <br>
+                                K Dong, D Eriksson, H Nickisch, D Bindel, AG Wilson
+                                <br>
+                                Advances in Neural Information Processing Systems, 6330-6340    
+                                <br>
+                                    <a href="https://arxiv.org/abs/1711.03481"
+                                    target="_blank">Download</a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a data-toggle="collapse" href="#2017-nips">Abstract</a>
+                                </p>
+                                <div id="2017-nips" class="collapse">
+                                    <h4>Abstract:</h4>
+                                    <p>
+                                        For applications as varied as Bayesian neural networks,
+                                        determinantal point pro-cesses, elliptical graphical models,
+                                        and kernel learning for Gaussian processes (GPs), one must
+                                        compute a log determinant of an $n \times n$ positive definite matrix,
+                                        and its derivatives – leading to prohibitive $\mathcal{O}(n^3)$
+                                        computations. We propose novel $\mathcal{O}(n)$ approaches to
+                                        estimating these quantities
+                                        from only fast matrix vector mul- tiplications (MVMs). These
+                                        stochastic approximations are based on Chebyshev, Lanczos, and
+                                        surrogate models, and converge quickly even for kernel matrices
+                                        that have challenging spectra. We leverage these approximations
+                                        to develop a scalable Gaussian process approach to kernel learning.
+                                        We find that Lanczos is generally superior to Chebyshev for kernel
+                                        learning, and that a surrogate approach can be highly efficient and
+                                        accurate with popular kernels.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="well my-well">
+                        <div class="media">
+                            <div class="col-xs-5 col-sm-4 col-md-3 vcenter">
+                                <table>
+                                    <center>
                                         <tr><td class="my-block light-blue">Comp. Geometry</td></tr>
                                         <tr><td class="my-block light-green">Numerical Analysis</td></tr>
                                         <tr><td class="my-block light-orange">HPC</td></tr>
@@ -108,9 +170,12 @@
                             </div><!--
                             --><div class="col-xs-7 col-sm-8 col-md-9 vcenter">
                             <p>
-                                D. Eriksson and E. Shellshear, “Fast exact shortest distance
-                                queries for massive point clouds,” <i>Graphical Models</i>,
-                                vol. 84, pp. 28-37, 2016.<br>
+                                <b>Fast exact shortest distance queries for massive point clouds</b>
+                                <br>
+                                D Eriksson, E Shellshear
+                                <br>
+                                Graphical Models 84, 28-37  
+                                <br>
                                 <a href="http://www.sciencedirect.com/science/article/pii/S1524070316000266"
                                 target="_blank">Download</a>
                                 &nbsp;&nbsp;&nbsp;
@@ -154,9 +219,12 @@
                         </div><!--
                         --><div class="col-xs-7 col-sm-8 col-md-9 vcenter">
                         <p class="pubContent">
-                            D. Eriksson, D. S. MacMillan, and J. M. Gipson, “Tropospheric
-                            delay raytracing applied in VLBI analysis,” <i>Journal of Geophysical
-                                Research</i>, vol. 119, issue 12, pp. 9156-9170, 2014.<br>
+                            <b>Tropospheric delay ray tracing applied in VLBI analysis</b>
+                            <br>
+                            D Eriksson, DS MacMillan, JM Gipson
+                            <br>
+                            Journal of Geophysical Research: Solid Earth 119 (12), 9156-9170
+                            <br>
                                 <a href="http://onlinelibrary.wiley.com/doi/10.1002/2014JB011552/full"
                                 target="_blank">Download</a>
                                 &nbsp;&nbsp;&nbsp;
@@ -207,9 +275,12 @@
                         </div><!--
                         --><div class="col-xs-7 col-sm-8 col-md-9 vcenter">
                         <p class="pubContent">
-                            D. Eriksson and D. S. MacMillan, “Continental hydrology loading
-                            observed by VLBI measurements,” <i>Journal of Geodesy</i>, Springer,
-                            vol. 88, issue 7, pp. 675-690, 2014.<br>
+                            <b>Continental hydrology loading observed by VLBI measurements</b>
+                            <br>
+                            D Eriksson, DS MacMillan
+                            <br>
+                            Journal of Geodesy 88 (7), 675-690
+                            <br>
                             <a href="http://link.springer.com/article/10.1007/s00190-014-0713-0"
                             target="_blank">Download</a>
                             &nbsp;&nbsp;&nbsp;
@@ -266,9 +337,12 @@
                     </div><!--
                     --><div class="col-xs-7 col-sm-8 col-md-9 vcenter">
                     <p class="pubContent">
-                        D. Eriksson and E. Shellshear, “Approximate distance queries for path-planning
-                        in massive point clouds,” <i>2014 11th International Conference on Informatics
-                            in Control, Automation and Robotics (ICINCO)</i>, IEEE, vol. 2, pp. 20-28, 2014.<br>
+                        <b>Approximate distance queries for path-planning in massive point clouds</b>
+                        <br>
+                        D Eriksson, E Shellshear
+                        <br>
+                        Informatics in Control, Automation and Robotics (ICINCO), 2014
+                        <br>
                             <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7049580&tag=1"
                             target="_blank">Download</a>
                             &nbsp;&nbsp;&nbsp;
