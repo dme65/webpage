@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="https://courses.cit.cornell.edu/favicon.ico" type="image/x-icon" />
     <meta http-equiv="refresh" content="300">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -108,6 +109,56 @@
 
                     <hr>
 
+
+                    <div class="well my-well">
+                        <div class="media">
+                            <div class="col-xs-5 col-sm-4 col-md-3 vcenter">
+                                <table>
+                                    <center>
+                                        <tr><td class="my-block light-platinum">Machine learning</td></tr>
+                                        <tr><td class="my-block light-green">Numerical Analysis</td></tr>
+                                    </center>
+                                </table>
+                                <br>
+                            </div><!--
+                            --><div class="col-xs-7 col-sm-8 col-md-9 vcenter">
+                            <p class="pubContent">
+                                <b>Scaling Gaussian Process Regression with Derivatives</b>
+                                <br>
+                                D Eriksson, K Dong, EH Lee, H Nickisch, D Bindel, AG Wilson
+                                <br>
+                                Advances in Neural Information Processing Systems 32 (NIPS), 2018    
+                                <br>
+                                    <a href="https://arxiv.org/abs/1810.12283"
+                                    target="_blank">Download</a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a data-toggle="collapse" href="#2018-nips">Abstract</a>
+                                </p>
+                                <div id="2018-nips" class="collapse">
+                                    <h4>Abstract:</h4>
+                                    <p>
+                                        Gaussian processes (GPs) with derivatives
+                                        are useful in many applications, including Bayesian
+                                        optimization, implicit surface reconstruction, and terrain
+                                        reconstruction. Fitting a GP to function values and derivatives
+                                        at $n$ points in $d$ dimensions requires linear solves and log determinants
+                                        with an ${n(d+1) \times n(d+1)}$ positive definite matrix
+                                        -- leading to prohibitive $\mathcal{O}(n^3d^3)$ computations
+                                        for standard direct methods. We propose
+                                        iterative solvers using fast $\mathcal{O}(nd)$ matrix-vector
+                                        multiplications (MVMs), together with pivoted Cholesky preconditioning
+                                        that cuts the iterations to convergence by several orders of magnitude,
+                                        allowing for fast kernel learning and prediction.
+                                        Our approaches, together with dimensionality reduction, enables
+                                        Bayesian optimization with derivatives to scale to high-dimensional problems and
+                                        large evaluation budgets.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="well my-well">
                         <div class="media">
                             <div class="col-xs-5 col-sm-4 col-md-3 vcenter">
@@ -125,9 +176,9 @@
                                 <br>
                                 K Dong, D Eriksson, H Nickisch, D Bindel, AG Wilson
                                 <br>
-                                Advances in Neural Information Processing Systems, 6330-6340    
+                                Advances in Neural Information Processing Systems 31 (NIPS), 2017
                                 <br>
-                                    <a href="https://arxiv.org/abs/1711.03481"
+                                    <a href="https://papers.nips.cc/paper/7212-scalable-log-determinants-for-gaussian-process-kernel-learning.pdf"
                                     target="_blank">Download</a>
                                     &nbsp;&nbsp;&nbsp;
                                     <a data-toggle="collapse" href="#2017-nips">Abstract</a>
@@ -136,7 +187,7 @@
                                     <h4>Abstract:</h4>
                                     <p>
                                         For applications as varied as Bayesian neural networks,
-                                        determinantal point pro-cesses, elliptical graphical models,
+                                        determinantal point processes, elliptical graphical models,
                                         and kernel learning for Gaussian processes (GPs), one must
                                         compute a log determinant of an $n \times n$ positive definite matrix,
                                         and its derivatives – leading to prohibitive $\mathcal{O}(n^3)$
